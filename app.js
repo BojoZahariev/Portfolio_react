@@ -2,6 +2,7 @@ const MePic = props => {
   return <img id='mePic' alt='me' src='images/me.jpg' />;
 };
 
+/*
 class Frame0 extends React.Component {
   constructor(props) {
     super(props);
@@ -18,9 +19,21 @@ class Frame0 extends React.Component {
     );
   }
 }
+*/
+const Frame0 = props => {
+  return (
+    <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
+      <p className={`framesText ${props.textStatus}`}>Projects</p>
+    </div>
+  );
+};
 
 const Frame1 = props => {
-  return <div className='frames'>About me</div>;
+  return (
+    <div className='frames' onClick={props.onClick}>
+      <p className={`framesText ${props.textStatus}`}>About me</p>
+    </div>
+  );
 };
 
 const Frame2 = props => {
@@ -35,19 +48,39 @@ class Container extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      //state
+      clicked: false
     };
 
-    //bind
+    this.clickControl = this.clickControl.bind(this);
+  }
+
+  clickControl(fr) {
+    this.setState({
+      clicked: fr
+    });
   }
 
   render() {
-    return (
-      <div className='main'>
-        <Frame0 />
-        <MePic />
-      </div>
-    );
+    if (!this.state.clicked) {
+      return (
+        <div className='main'>
+          <MePic />
+          <Frame0 onClick={() => this.clickControl('framesClicked0')} textStatus={'framesTextUpLeft'} />
+          <Frame1 textStatus={'framesTextUpRight'} />
+        </div>
+      );
+    }
+
+    if (this.state.clicked === 'framesClicked0') {
+      return (
+        <div className='main'>
+          <Frame0 frameStatus={this.state.clicked} textStatus={'framesText0Move'} />
+          <div onClick={() => this.clickControl(false)} className='backBtn'>
+            Back
+          </div>
+        </div>
+      );
+    }
   }
 }
 
