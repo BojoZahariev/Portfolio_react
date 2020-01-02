@@ -45,7 +45,11 @@ const Frame2 = props => {
 };
 
 const Frame3 = props => {
-  return <div className='frames'>Get in Touch</div>;
+  return (
+    <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
+      <p className={`framesText ${props.textStatus}`}>Get in touch</p>
+    </div>
+  );
 };
 
 class Container extends React.Component {
@@ -72,6 +76,7 @@ class Container extends React.Component {
           <Frame0 onClick={() => this.clickControl('framesClicked0')} textStatus={'framesTextUpLeft'} />
           <Frame1 onClick={() => this.clickControl('framesClicked1')} textStatus={'framesTextUpRight'} />
           <Frame2 onClick={() => this.clickControl('framesClicked2')} textStatus={'framesTextDownLeft'} />
+          <Frame3 onClick={() => this.clickControl('framesClicked3')} textStatus={'framesTextDownRight'} />
         </div>
       );
     }
@@ -102,6 +107,17 @@ class Container extends React.Component {
       return (
         <div className='main'>
           <Frame2 frameStatus={this.state.clicked} textStatus={'framesText1Move'} />
+          <div onClick={() => this.clickControl(false)} className='backBtn'>
+            Back
+          </div>
+        </div>
+      );
+    }
+
+    if (this.state.clicked === 'framesClicked3') {
+      return (
+        <div className='main'>
+          <Frame3 frameStatus={this.state.clicked} textStatus={'framesText1Move'} />
           <div onClick={() => this.clickControl(false)} className='backBtn'>
             Back
           </div>

@@ -5,12 +5,12 @@
 }
 
 .main {
-  background-color: #0e1428;
   height: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   font-family: 'Righteous', cursive;
+  background-color: #78cdd7;
 }
 
 #mePic {
@@ -25,6 +25,42 @@
   filter: grayscale(50%);
   z-index: 1;
   background-color: #475b63;
+
+  animation-name: expandPic;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: expandPic;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expandPic {
+  from {
+    width: 1px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  to {
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+}
+
+@-webkit-keyframes expandPic {
+  from {
+    width: 1px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  to {
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
 }
 
 .frames {
@@ -33,6 +69,7 @@
   position: relative;
   transition: all 1s ease;
   cursor: pointer;
+  background-color: #0e1428;
 }
 
 .frames:hover {
@@ -64,6 +101,12 @@
 .framesTextDownLeft {
   left: 50%;
   margin-left: -100px;
+  bottom: 50%;
+}
+
+.framesTextDownRight {
+  right: 50%;
+  margin-right: -100px;
   bottom: 50%;
 }
 
@@ -102,16 +145,16 @@
 
 .framesText1Move {
   -webkit-animation-name: move1;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1.2s;
   animation-name: move1;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
 }
 
 @keyframes move1 {
   0% {
     left: 50%;
     margin-left: -100px;
-    bottom: 50%;
+    top: 50%;
   }
 
   100% {
@@ -125,8 +168,10 @@
   position: absolute;
   -webkit-animation-name: expand0;
   -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-name: expand0;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes expand0 {
@@ -169,8 +214,10 @@
   position: absolute;
   -webkit-animation-name: expand1;
   -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-name: expand1;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes expand1 {
@@ -213,8 +260,10 @@
   position: absolute;
   -webkit-animation-name: expand2;
   -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-name: expand2;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes expand2 {
@@ -250,6 +299,52 @@
 }
 
 .framesClicked2:hover {
+  border: none;
+}
+
+.framesClicked3 {
+  position: absolute;
+  -webkit-animation-name: expand3;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expand3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand3 {
+  0% {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #475b63;
+  }
+}
+
+@-webkit-keyframes expand3 {
+  0% {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #475b63;
+  }
+}
+
+.framesClicked3:hover {
   border: none;
 }
 
