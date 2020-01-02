@@ -58,7 +58,7 @@ const Frame2 = props => {
   } else {
     return (
       <div
-        className={`frames ${props.isHovered === 2 ? 'framesHovered1' : false}`}
+        className={`frames ${props.isHovered === 2 ? 'framesHovered2' : false}`}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}>
@@ -80,7 +80,7 @@ const Frame3 = props => {
   } else {
     return (
       <div
-        className={`frames ${props.isHovered === 3 ? 'framesHovered1' : false}`}
+        className={`frames ${props.isHovered === 3 ? 'framesHovered3' : false}`}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}>

@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   font-family: 'Righteous', cursive;
-  background-color: #78cdd7;
+  background-color: #0e1428;
 }
 
 #mePic {
@@ -22,9 +22,9 @@
   width: 200px;
   border: 4px solid #78cdd7;
   border-radius: 50%;
-  filter: grayscale(50%);
+  filter: grayscale(60%);
   z-index: 1;
-  background-color: #475b63;
+  background-color: #0e1428;
 
   animation-name: expandPic;
   animation-duration: 1s;
@@ -67,20 +67,36 @@
   width: 50%;
   height: 50%;
   position: relative;
-  transition: all 1s;
   cursor: pointer;
   background-color: #0e1428;
 }
 
 .framesHovered0 {
-  background-image: url(images/gears-4084796_640.jpg);
+  background-image: url(images/fairy-tale-full.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .framesHovered1 {
-  background-color: #475b63;
+  background-image: url(images/aboutme_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.framesHovered2 {
+  background-image: url(images/cv_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.framesHovered3 {
+  background-image: url(images/contact_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .frames:hover {
@@ -95,6 +111,7 @@
   text-align: center;
   padding: 10px;
   transition: all 1s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .framesTextUpLeft {
@@ -183,6 +200,11 @@
   animation-name: expand0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
+  background-image: url(images/fairy-tale-full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes expand0 {
@@ -229,6 +251,11 @@
   animation-name: expand1;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
+  background-image: url(images/aboutme_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes expand1 {
@@ -275,6 +302,11 @@
   animation-name: expand2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
+  background-image: url(images/cv_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes expand2 {
@@ -321,6 +353,11 @@
   animation-name: expand3;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
+  background-image: url(images/contact_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes expand3 {
