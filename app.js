@@ -30,14 +30,18 @@ const Frame0 = props => {
 
 const Frame1 = props => {
   return (
-    <div className='frames' onClick={props.onClick}>
+    <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
       <p className={`framesText ${props.textStatus}`}>About me</p>
     </div>
   );
 };
 
 const Frame2 = props => {
-  return <div className='frames'>CV</div>;
+  return (
+    <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
+      <p className={`framesText ${props.textStatus}`}>CV</p>
+    </div>
+  );
 };
 
 const Frame3 = props => {
@@ -66,7 +70,8 @@ class Container extends React.Component {
         <div className='main'>
           <MePic />
           <Frame0 onClick={() => this.clickControl('framesClicked0')} textStatus={'framesTextUpLeft'} />
-          <Frame1 textStatus={'framesTextUpRight'} />
+          <Frame1 onClick={() => this.clickControl('framesClicked1')} textStatus={'framesTextUpRight'} />
+          <Frame2 onClick={() => this.clickControl('framesClicked2')} textStatus={'framesTextDownLeft'} />
         </div>
       );
     }
@@ -75,6 +80,28 @@ class Container extends React.Component {
       return (
         <div className='main'>
           <Frame0 frameStatus={this.state.clicked} textStatus={'framesText0Move'} />
+          <div onClick={() => this.clickControl(false)} className='backBtn'>
+            Back
+          </div>
+        </div>
+      );
+    }
+
+    if (this.state.clicked === 'framesClicked1') {
+      return (
+        <div className='main'>
+          <Frame1 frameStatus={this.state.clicked} textStatus={'framesText0Move'} />
+          <div onClick={() => this.clickControl(false)} className='backBtn'>
+            Back
+          </div>
+        </div>
+      );
+    }
+
+    if (this.state.clicked === 'framesClicked2') {
+      return (
+        <div className='main'>
+          <Frame2 frameStatus={this.state.clicked} textStatus={'framesText1Move'} />
           <div onClick={() => this.clickControl(false)} className='backBtn'>
             Back
           </div>
