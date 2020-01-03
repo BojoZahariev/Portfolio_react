@@ -1,5 +1,14 @@
-const MePic = props => {
-  return <img id='mePic' alt='me' src='images/me-nobg.png' />;
+const Me = () => {
+  return (
+    <div className='me'>
+      <p className='meText'>
+        Hello, <br />
+        I'm Bojo Zahariev,
+        <br /> Front-end
+        <br /> UI Developer
+      </p>
+    </div>
+  );
 };
 
 const Frame0 = props => {
@@ -50,7 +59,7 @@ const Frame2 = props => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
-        <p className={`framesText ${props.textStatus}`}>CV</p>
+        <p className={`framesText ${props.textStatus}`}>Skills</p>
         <div className='projects'>1</div>
         <div className='projects'>1</div>
       </div>
@@ -62,7 +71,7 @@ const Frame2 = props => {
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}>
-        <p className={`framesText ${props.textStatus}`}>CV</p>
+        <p className={`framesText ${props.textStatus}`}>Skills</p>
       </div>
     );
   }
@@ -72,7 +81,7 @@ const Frame3 = props => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`} onClick={props.onClick}>
-        <p className={`framesText ${props.textStatus}`}>Get in Touch</p>
+        <p className={`framesText ${props.textStatus}`}>Contact</p>
         <div className='projects'>1</div>
         <div className='projects'>1</div>
       </div>
@@ -84,7 +93,7 @@ const Frame3 = props => {
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}>
-        <p className={`framesText ${props.textStatus}`}>Get in Touch</p>
+        <p className={`framesText ${props.textStatus}`}>Contact</p>
       </div>
     );
   }
@@ -126,6 +135,8 @@ class Container extends React.Component {
     if (!this.state.clicked) {
       return (
         <div className='main'>
+          <Me />
+
           <Frame0
             onMouseEnter={() => this.handleFramesHover(0)}
             onMouseLeave={this.handleFramesHoverLeave}

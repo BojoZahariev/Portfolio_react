@@ -5,6 +5,7 @@
 }
 
 .main {
+  text-align: center;
   height: 100vh;
   position: relative;
   display: flex;
@@ -14,53 +15,54 @@
   background-position: center center;
 }
 
-#mePic {
+.me {
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -150px;
   top: 50%;
-  margin-top: -100px;
-  width: 200px;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
   border: 4px solid #78cdd7;
   border-radius: 50%;
-  filter: grayscale(40%);
+
   z-index: 1;
   background-color: #0e1428;
+  color: #dffdff;
+
+  text-align: center;
+  font-size: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   animation-name: expandPic;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   -webkit-animation-name: expandPic;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 @keyframes expandPic {
   from {
-    width: 1px;
-    margin-top: 0px;
-    margin-left: 0px;
+    opacity: 0;
   }
 
   to {
-    width: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes expandPic {
   from {
-    width: 1px;
-    margin-top: 0px;
-    margin-left: 0px;
+    opacity: 0;
   }
 
   to {
-    width: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+    opacity: 1;
   }
 }
 
@@ -72,7 +74,7 @@
   background-color: #0e1428;
   background-image: url(images/piece3.png);
   background-position: center center;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 
 .framesHovered0 {
@@ -97,7 +99,7 @@
 }
 
 .framesHovered3 {
-  background-image: url(images/contact_full.png);
+  background-image: url(images/contact_full2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -368,7 +370,7 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
 
-  background-image: url(images/contact_full.png);
+  background-image: url(images/contact_full2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
