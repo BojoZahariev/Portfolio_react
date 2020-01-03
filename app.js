@@ -1,5 +1,5 @@
 const MePic = props => {
-  return <img id='mePic' alt='me' src='images/me.jpg' />;
+  return <img id='mePic' alt='me' src='images/me-nobg.png' />;
 };
 
 const Frame0 = props => {
@@ -126,7 +126,6 @@ class Container extends React.Component {
     if (!this.state.clicked) {
       return (
         <div className='main'>
-          <MePic />
           <Frame0
             onMouseEnter={() => this.handleFramesHover(0)}
             onMouseLeave={this.handleFramesHoverLeave}

@@ -10,7 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   font-family: 'Righteous', cursive;
-  background-color: #0e1428;
+  background-image: url(images/piece3.png);
+  background-position: center center;
 }
 
 #mePic {
@@ -22,7 +23,7 @@
   width: 200px;
   border: 4px solid #78cdd7;
   border-radius: 50%;
-  filter: grayscale(60%);
+  filter: grayscale(40%);
   z-index: 1;
   background-color: #0e1428;
 
@@ -69,13 +70,16 @@
   position: relative;
   cursor: pointer;
   background-color: #0e1428;
+  background-image: url(images/piece3.png);
+  background-position: center center;
+  transition: all 1s;
 }
 
 .framesHovered0 {
   background-image: url(images/fairy-tale-full.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 .framesHovered1 {
@@ -97,10 +101,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.frames:hover {
-  border: 1px solid #475b63;
 }
 
 .framesText {
@@ -173,12 +173,26 @@
 
 .framesText1Move {
   -webkit-animation-name: move1;
-  -webkit-animation-duration: 1.2s;
+  -webkit-animation-duration: 1s;
   animation-name: move1;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
 }
 
 @keyframes move1 {
+  0% {
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+  }
+}
+
+@-webkit-keyframes move1 {
   0% {
     left: 50%;
     margin-left: -100px;
