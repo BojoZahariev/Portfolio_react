@@ -28,6 +28,7 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Angel shining</h1>
+                  <p className='flipText'>Static website made for a small autocosmetics garage in Bulgaria</p>
                   <a href='https://angelskosiyanie.com' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
@@ -48,6 +49,7 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Chameleon</h1>
+                  <p className='flipText'>Static website made for a small autocosmetics garage in Bulgaria</p>
                   <a href='#' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live

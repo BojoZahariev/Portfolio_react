@@ -435,13 +435,39 @@
 }
 
 .projects {
-  border-radius: 50%;
+  border-radius: 10%;
   width: 20vw;
   height: 20vw;
   border: 4px solid #78cdd7;
   backface-visibility: hidden;
   background-color: transparent;
   margin: 10px;
+  perspective: 1000px;
+
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expandP;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expandP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expandP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .flip-projects-inner {
@@ -460,7 +486,7 @@
 .flip-projects-front,
 .flip-projects-back {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 9%;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -470,7 +496,7 @@
   background-color: #78cdd7;
   color: #222;
   transform: rotateY(180deg);
-  border-radius: 50%;
+  border-radius: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,6 +504,10 @@
 
 .flipTitle {
   padding: 20px;
+}
+
+.flipText {
+  padding: 5px;
 }
 
 .links {
