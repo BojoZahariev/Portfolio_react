@@ -21,6 +21,48 @@ const Frame0 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>Projects</p>
         <div className='projectsDiv'>
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project1'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Angel shining</h1>
+                  <a href='https://angelskosiyanie.com' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/AngelskoSiyanie' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project2'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Chameleon</h1>
+                  <a href='#' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='#' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>1</div>
+          <div className='projects'>1</div>
           <div className='projects'>1</div>
         </div>
 
