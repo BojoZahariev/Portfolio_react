@@ -63,6 +63,52 @@
   }
 }
 
+/*ORBIT*/
+.orbit {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  z-index: 999;
+  border-radius: 100%;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite;
+}
+
+.orbit-ball {
+  position: absolute;
+  top: -15px;
+  left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #78cdd7;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*THE 4 sections*/
 .frames {
   width: 50%;
   height: 50%;
@@ -418,7 +464,7 @@
   bottom: 0;
   left: 0;
   color: white;
-
+  cursor: pointer;
   background-image: url(images/left-arrow.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -438,7 +484,7 @@
   border-radius: 10%;
   width: 20vw;
   height: 20vw;
-  border: 4px solid #78cdd7;
+
   backface-visibility: hidden;
   background-color: transparent;
   margin: 10px;
@@ -480,30 +526,31 @@
 }
 
 .projects:hover .flip-projects-inner {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .flip-projects-front,
 .flip-projects-back {
   position: absolute;
-  border-radius: 9%;
+  border-radius: 10%;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border: 4px solid #78cdd7;
 }
 
 .flip-projects-back {
   background-color: #78cdd7;
   color: #222;
-  transform: rotateY(180deg);
-  border-radius: 8%;
+  transform: rotateX(180deg);
+  border-radius: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flipTitle {
-  padding: 20px;
+  padding: 5px;
 }
 
 .flipText {
@@ -536,47 +583,16 @@
   background-position: center;
 }
 
-/*ORBIT*/
-.orbit {
-  position: absolute;
-  left: 50%;
-  margin-left: -150px;
-  top: 50%;
-  margin-top: -150px;
-  width: 300px;
-  height: 300px;
-  z-index: 999;
-  border-radius: 100%;
-  -webkit-animation: spin 20s linear infinite;
-  animation: spin 20s linear infinite;
+#project3 {
+  background-image: url(images/weather.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.orbit-ball {
-  position: absolute;
-  top: -15px;
-  left: 125px;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  background-color: #78cdd7;
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#project4 {
+  background-image: url(images/vodolaza.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

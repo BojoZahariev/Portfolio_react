@@ -35,8 +35,9 @@ const Frame0 = props => {
 
               <div className='flip-projects-back'>
                 <div>
-                  <h1 className='flipTitle'>Angel shining</h1>
-                  <p className='flipText'>Static website made for a small autocosmetics garage in Bulgaria</p>
+                  <h2 className='flipTitle'>Autocosmetics Studio</h2>
+                  <h1 className='flipTitle'>'Angel shining'</h1>
+                  <p className='flipText'>Static website made for an autocosmetics garage in Bulgaria, hence the strange language.</p>
                   <a href='https://angelskosiyanie.com' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
@@ -57,12 +58,12 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Chameleon</h1>
-                  <p className='flipText'>Static website made for a small autocosmetics garage in Bulgaria</p>
-                  <a href='#' className='links'>
+                  <p className='flipText'>REACT game designed to help people learn RGB and HEX colour formats.</p>
+                  <a href='https://bojozahariev.github.io/Chameleon/' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
                   </a>
-                  <a href='#' className='links'>
+                  <a href='https://github.com/BojoZahariev/Chameleon' target='blank' className='links'>
                     <img src='images/github.png' alt='github' />
                     GitHub
                   </a>
@@ -71,9 +72,47 @@ const Frame0 = props => {
             </div>
           </div>
 
-          <div className='projects'>1</div>
-          <div className='projects'>1</div>
-          <div className='projects'>1</div>
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project3'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Weather App</h1>
+                  <p className='flipText'>Local weather app made using the 'Openweathermap' API.</p>
+                  <a href='https://bojozahariev.github.io/Weather-App/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Weather-App' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project4'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Vodolaza</h1>
+                  <p className='flipText'>REACT restaurant page made for training. Real place though, one of my favorites.</p>
+                  <a href='https://bojozahariev.github.io/Restaurant_react/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Restaurant_react' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <Back onClick={props.onClick} />
@@ -98,9 +137,7 @@ const Frame1 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>About me</p>
 
-        <div className='projectsDiv'>
-          <div className='projects'>1</div>
-        </div>
+        <div className='projectsDiv'></div>
 
         <Back onClick={props.onClick} />
       </div>
@@ -124,9 +161,7 @@ const Frame2 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>Skills</p>
 
-        <div className='projectsDiv'>
-          <div className='projects'>1</div>
-        </div>
+        <div className='projectsDiv'></div>
 
         <Back onClick={props.onClick} />
       </div>
@@ -150,9 +185,7 @@ const Frame3 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>Contact</p>
 
-        <div className='projectsDiv'>
-          <div className='projects'>1</div>
-        </div>
+        <div className='projectsDiv'></div>
 
         <Back onClick={props.onClick} />
       </div>
