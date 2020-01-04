@@ -4,7 +4,8 @@ const Me = () => {
       <p className='meText'>
         Bojo Zahariev,
         <br /> Front-end
-        <br /> UI Developer
+        <br /> Web Developer
+        <br /> UX/UI Design
       </p>
     </div>
   );
