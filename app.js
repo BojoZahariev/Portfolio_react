@@ -35,7 +35,6 @@ const Frame0 = props => {
 
               <div className='flip-projects-back'>
                 <div>
-                  <h2 className='flipTitle'>Autocosmetics Studio</h2>
                   <h1 className='flipTitle'>'Angel shining'</h1>
                   <p className='flipText'>Static website made for an autocosmetics garage in Bulgaria, hence the strange language.</p>
                   <a href='https://angelskosiyanie.com' target='blank' className='links'>
@@ -58,7 +57,7 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Chameleon</h1>
-                  <p className='flipText'>REACT game designed to help people learn RGB and HEX colour formats.</p>
+                  <p className='flipText'>REACT game, designed to help people learn RGB and HEX colour formats.</p>
                   <a href='https://bojozahariev.github.io/Chameleon/' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
@@ -79,7 +78,7 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Weather App</h1>
-                  <p className='flipText'>Local weather app made using the 'Openweathermap' API.</p>
+                  <p className='flipText'>Local weather App, made using the 'Openweathermap' API.</p>
                   <a href='https://bojozahariev.github.io/Weather-App/' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
@@ -100,12 +99,264 @@ const Frame0 = props => {
               <div className='flip-projects-back'>
                 <div>
                   <h1 className='flipTitle'>Vodolaza</h1>
-                  <p className='flipText'>REACT restaurant page made for training. Real place though, one of my favorites.</p>
+                  <p className='flipText'>REACT small restaurant page, made for fun. Real place though, one of my favorite.</p>
                   <a href='https://bojozahariev.github.io/Restaurant_react/' target='blank' className='links'>
                     <img src='images/live.png' alt='live' />
                     Live
                   </a>
                   <a href='https://github.com/BojoZahariev/Restaurant_react' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project5'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>My Lotto Numbers</h1>
+                  <p className='flipText'>Lucky Lotto Numbers generator using name and DOB as seed.</p>
+                  <a href='https://bojozahariev.github.io/Lotto_Numbers/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Lotto_Numbers' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project6'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Calculator</h1>
+                  <p className='flipText'>JavaScript Steampunk calculator, one of my early projects.</p>
+                  <a href='https://bojozahariev.github.io/Calculator/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Calculator' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project7'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>The Next Web</h1>
+                  <p className='flipText'>The Next Web landing page mockup.</p>
+                  <a href='https://bojozahariev.github.io/TheNextWeb-homepage/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/TheNextWeb-homepage' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project8'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Tic Tac Toe</h1>
+                  <p className='flipText'>JavaScript Tic Tac Toe game.</p>
+                  <a href='https://bojozahariev.github.io/TicTacToe/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/TicTacToe' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project9'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>My Library</h1>
+                  <p className='flipText'>Personal Library with Internal Storage</p>
+                  <a href='https://bojozahariev.github.io/My_Library/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/My_Library' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project10'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>The New York Times article</h1>
+                  <p className='flipText'>The New York Times article mockup.</p>
+                  <a href='https://bojozahariev.github.io/NY_Times_article/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/NY_Times_article' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project11'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Sketch</h1>
+                  <p className='flipText'>Drawing App.</p>
+                  <a href='https://bojozahariev.github.io/Sketch/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Sketch' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project12'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>To Do List</h1>
+                  <p className='flipText'>To Do list using Internal Storage.</p>
+                  <a href='https://bojozahariev.github.io/ToDo/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/ToDo' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project13'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Newsweek</h1>
+                  <p className='flipText'>Newsweek landing page mockup, done with Bootstrap.</p>
+                  <a href='https://bojozahariev.github.io/NewsWeek/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/NewsWeek' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project14'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>YouTube</h1>
+                  <p className='flipText'>YouTube single page mockup.</p>
+                  <a href='https://bojozahariev.github.io/youtube_video/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/youtube_video' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project15'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Rock Paper Scissors</h1>
+                  <p className='flipText'>Rock Paper Scissors game.</p>
+                  <a href='https://bojozahariev.github.io/Rock_paper_scissors/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Rock_paper_scissors' target='blank' className='links'>
+                    <img src='images/github.png' alt='github' />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='projects'>
+            <div className='flip-projects-inner'>
+              <div className='flip-projects-front' id='project16'></div>
+
+              <div className='flip-projects-back'>
+                <div>
+                  <h1 className='flipTitle'>Pomodoro Timer</h1>
+                  <p className='flipText'>Code / Rest technique timer.</p>
+                  <a href='https://bojozahariev.github.io/Pomodoro-timer/' target='blank' className='links'>
+                    <img src='images/live.png' alt='live' />
+                    Live
+                  </a>
+                  <a href='https://github.com/BojoZahariev/Pomodoro-timer' target='blank' className='links'>
                     <img src='images/github.png' alt='github' />
                     GitHub
                   </a>

@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(images/piece3.png);
+  background-position: center center;
+}
+
 .main {
+  padding: 0;
+  margin: 0;
   text-align: center;
   height: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   font-family: 'Righteous', cursive;
-  background-image: url(images/piece3.png);
-  background-position: center center;
 }
 
 .me {
@@ -263,7 +268,7 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
 
-  background-image: url(images/fairy-tale-full.png);
+  background: url(images/fairy-tale-full.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -463,17 +468,38 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  color: white;
+
   cursor: pointer;
   background-image: url(images/left-arrow.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  -webkit-animation-name: fix;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: fix;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fix {
+  100% {
+    position: fixed;
+  }
+}
+
+@-webkit-keyframes fix {
+  100% {
+    position: fixed;
+  }
 }
 
 /*PROJECTS*/
 .projectsDiv {
-  margin: 5% auto;
+  margin: 50px auto;
   width: 99%;
   display: flex;
   flex-wrap: wrap;
@@ -483,19 +509,25 @@
 .projects {
   border-radius: 10%;
   width: 20vw;
-  height: 20vw;
-
+  min-width: 270px;
+  max-width: 333px;
+  height: 18vw;
+  min-height: 250px;
+  max-height: 310px;
+  opacity: 0;
   backface-visibility: hidden;
   background-color: transparent;
   margin: 10px;
   perspective: 1000px;
 
   -webkit-animation-name: expandP;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
   animation-name: expandP;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 @keyframes expandP {
@@ -537,6 +569,9 @@
   height: 100%;
   backface-visibility: hidden;
   border: 4px solid #78cdd7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .flip-projects-back {
@@ -571,28 +606,71 @@
 
 #project1 {
   background-image: url(images/CaptureAngelskoSiyanie.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #project2 {
   background-image: url(images/chameleon.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #project3 {
   background-image: url(images/weather.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #project4 {
   background-image: url(images/vodolaza.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+#project5 {
+  background-image: url(images/Lotto.PNG);
+}
+
+#project6 {
+  background-image: url(images/Calculator.png);
+}
+
+#project7 {
+  background-image: url(images/TNW.png);
+}
+
+#project8 {
+  background-image: url(images/TicTacToe.png);
+}
+
+#project9 {
+  background-image: url(images/Library.png);
+}
+
+#project10 {
+  background-image: url(images/NyTimes.png);
+}
+
+#project11 {
+  background-image: url(images/Sketch.png);
+}
+
+#project12 {
+  background-image: url(images/ToDo.PNG);
+}
+
+#project13 {
+  background-image: url(images/Newsweek.png);
+}
+
+#project14 {
+  background-image: url(images/YouTube.png);
+}
+
+#project15 {
+  background-image: url(images/RockPaperScissors.png);
+}
+
+#project16 {
+  background-image: url(images/Pomodoro.PNG);
+}
+
+/*MEDIA*/
+@media screen and (max-width: 576px) {
+  .backBtn {
+    position: fixed;
+  }
 }
