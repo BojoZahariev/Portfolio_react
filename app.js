@@ -2,11 +2,18 @@ const Me = () => {
   return (
     <div className='me'>
       <p className='meText'>
-        Hello, <br />
-        I'm Bojo Zahariev,
+        Bojo Zahariev,
         <br /> Front-end
         <br /> UI Developer
       </p>
+    </div>
+  );
+};
+
+const Orbit = () => {
+  return (
+    <div className='orbit'>
+      <div className='orbit-ball'></div>
     </div>
   );
 };
@@ -199,6 +206,7 @@ class Container extends React.Component {
       return (
         <div className='main'>
           <Me />
+          <Orbit />
 
           <Frame0
             onMouseEnter={() => this.handleFramesHover(0)}

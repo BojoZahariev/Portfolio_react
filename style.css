@@ -23,7 +23,7 @@
   margin-top: -150px;
   width: 300px;
   height: 300px;
-  border: 4px solid #78cdd7;
+  border: 2px solid #78cdd7;
   border-radius: 50%;
   z-index: 1;
   background-color: #0e1428;
@@ -534,4 +534,49 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/*ORBIT*/
+.orbit {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  z-index: 999;
+  border-radius: 100%;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite;
+}
+
+.orbit-ball {
+  position: absolute;
+  top: -15px;
+  left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #78cdd7;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
