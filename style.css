@@ -122,6 +122,9 @@ body {
   background-color: #0e1428;
   background-image: url(images/piece3.png);
   background-position: center center;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
 }
 
