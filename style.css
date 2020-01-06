@@ -471,9 +471,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #fff;
 
   cursor: pointer;
-  background-image: url(images/left-arrow.png);
+  background-image: url(images/arrow2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -498,6 +499,11 @@ body {
   100% {
     position: fixed;
   }
+}
+
+.backBtn:hover {
+  transition: all 0.5s;
+  left: -10px;
 }
 
 /*PROJECTS*/
