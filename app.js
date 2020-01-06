@@ -68,7 +68,7 @@ const Frame0 = props => {
           <Project
             id={'project1'}
             title={'Angel shining'}
-            text={'Static website made for an autocosmetics garage in Bulgaria, hence the strange language.'}
+            text={'Static website made for a small autocosmetics garage in Bulgaria, hence the strange language.'}
             live={'https://angelskosiyanie.com'}
             git={'https://github.com/BojoZahariev/AngelskoSiyanie'}
           />
@@ -212,7 +212,13 @@ const Frame1 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>About me</p>
 
-        <div className='projectsDiv'></div>
+        <div className='aboutMeDiv'>
+          <img id='mePic' src='images/me.jpg' alt='me'></img>
+          <p className='aboutMeText'>
+            Hi, I'm Bojo, <br />A Web Developer who likes to push the boundaries and loves to think of new ways to create outstanding experiences and amazing digital content across
+            all devices.
+          </p>
+        </div>
 
         <Back onClick={props.onClick} />
       </div>
@@ -267,15 +273,15 @@ const Frame3 = props => {
         <p className={`framesText ${props.textStatus}`}>Contact</p>
 
         <div className='skillsDiv'>
-          <a className='skill' href='mailto: bozhidar_zahariev@hotmail.com'>
+          <a className='skill' href='mailto:bozhidar_zahariev@hotmail.com'>
             <div className='contactLink' id='link1'></div>
           </a>
 
-          <a className='skill' href='https://www.linkedin.com/in/bojo-zahariev-157565190/'>
+          <a className='skill' href='https://www.linkedin.com/in/bojo-zahariev-157565190/' target='blank'>
             <div className='contactLink' id='link2'></div>
           </a>
 
-          <a className='skill' href='https://github.com/BojoZahariev'>
+          <a className='skill' href='https://github.com/BojoZahariev' target='blank'>
             <div className='contactLink' id='link3'></div>
           </a>
         </div>

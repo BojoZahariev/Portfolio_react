@@ -761,9 +761,78 @@ a {
   background-image: url(images/githubBlue.png);
 }
 
+/*About me*/
+
+.aboutMeDiv {
+  width: 70%;
+  margin: 20% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1428;
+  border-radius: 10px;
+
+  opacity: 0;
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-name: expandP;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#mePic {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.aboutMeText {
+  width: 80%;
+  font-size: 22px;
+  color: #78cdd7;
+  text-align: left;
+  padding: 10px;
+}
+
 /*MEDIA*/
 @media screen and (max-width: 576px) {
+  .me {
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .orbit {
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-ball {
+    top: -10px;
+    left: 100px;
+    height: 20px;
+    width: 20px;
+  }
+
   .framesText {
     font-size: 28px;
+  }
+
+  .aboutMeDiv {
+    width: 90%;
+    margin: 20% auto;
+  }
+
+  .aboutMeText {
+    width: 100%;
   }
 }
