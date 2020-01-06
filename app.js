@@ -11,6 +11,7 @@ const Me = () => {
   );
 };
 
+//Orbiting ball
 const Orbit = () => {
   return (
     <div className='orbit'>
@@ -19,6 +20,7 @@ const Orbit = () => {
   );
 };
 
+//Back Button
 const Back = props => {
   return <div onClick={props.onClick} className='backBtn'></div>;
 };
@@ -44,6 +46,15 @@ const Project = props => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const Skill = props => {
+  return (
+    <div className='skill'>
+      <p className='skillText'>{props.text}</p>
+      <div className='skillIcon' id={props.id}></div>
     </div>
   );
 };
@@ -137,7 +148,7 @@ const Frame0 = props => {
           <Project
             id={'project11'}
             title={'Sketch'}
-            text={'Drawing App.'}
+            text={'Drawing App with DOM manipulation.'}
             live={'https://bojozahariev.github.io/Sketch/'}
             git={'https://github.com/BojoZahariev/Sketch'}
           />
@@ -188,11 +199,7 @@ const Frame0 = props => {
     );
   } else {
     return (
-      <div
-        className={`frames ${props.isHovered === 0 ? 'framesHovered0' : false}`}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-        onClick={props.onClick}>
+      <div className={`frames ${props.isHovered === 0 ? 'framesHovered0' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
         <p className={`framesText ${props.textStatus}`}>Projects</p>
       </div>
     );
@@ -212,11 +219,7 @@ const Frame1 = props => {
     );
   } else {
     return (
-      <div
-        className={`frames ${props.isHovered === 1 ? 'framesHovered1' : false}`}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-        onClick={props.onClick}>
+      <div className={`frames ${props.isHovered === 1 ? 'framesHovered1' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
         <p className={`framesText ${props.textStatus}`}>About me</p>
       </div>
     );
@@ -229,18 +232,28 @@ const Frame2 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>Skills</p>
 
-        <div className='projectsDiv'></div>
+        <div className='skillsDiv'>
+          <Skill text={'JavaScript'} id={'skillIcon1'} />
+
+          <Skill text={'HTML'} id={'skillIcon2'} />
+
+          <Skill text={'CSS'} id={'skillIcon3'} />
+
+          <Skill text={'REACT'} id={'skillIcon4'} />
+
+          <Skill text={'Bootstrap'} id={'skillIcon5'} />
+
+          <Skill text={'SQL'} id={'skillIcon6'} />
+
+          <Skill text={'Git'} id={'skillIcon7'} />
+        </div>
 
         <Back onClick={props.onClick} />
       </div>
     );
   } else {
     return (
-      <div
-        className={`frames ${props.isHovered === 2 ? 'framesHovered2' : false}`}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-        onClick={props.onClick}>
+      <div className={`frames ${props.isHovered === 2 ? 'framesHovered2' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
         <p className={`framesText ${props.textStatus}`}>Skills</p>
       </div>
     );
@@ -253,18 +266,26 @@ const Frame3 = props => {
       <div className={`frames ${props.frameStatus}`}>
         <p className={`framesText ${props.textStatus}`}>Contact</p>
 
-        <div className='projectsDiv'></div>
+        <div className='skillsDiv'>
+          <a className='skill' href='mailto: bozhidar_zahariev@hotmail.com'>
+            <div className='contactLink' id='link1'></div>
+          </a>
+
+          <a className='skill' href='https://www.linkedin.com/in/bojo-zahariev-157565190/'>
+            <div className='contactLink' id='link2'></div>
+          </a>
+
+          <a className='skill' href='https://github.com/BojoZahariev'>
+            <div className='contactLink' id='link3'></div>
+          </a>
+        </div>
 
         <Back onClick={props.onClick} />
       </div>
     );
   } else {
     return (
-      <div
-        className={`frames ${props.isHovered === 3 ? 'framesHovered3' : false}`}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-        onClick={props.onClick}>
+      <div className={`frames ${props.isHovered === 3 ? 'framesHovered3' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
         <p className={`framesText ${props.textStatus}`}>Contact</p>
       </div>
     );

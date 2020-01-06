@@ -159,7 +159,7 @@ body {
 /*Titles*/
 .framesText {
   position: absolute;
-  font-size: 30px;
+  font-size: 35px;
   width: 200px;
   color: #78cdd7;
   text-align: center;
@@ -503,7 +503,7 @@ body {
 /*PROJECTS*/
 .projectsDiv {
   margin: 50px auto;
-  width: 99%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -671,9 +671,99 @@ body {
   background-image: url(images/Pomodoro.PNG);
 }
 
+/*Skills*/
+.skillsDiv {
+  width: 90%;
+  margin: 20% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  margin: 10px;
+  opacity: 0;
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-name: expandP;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.skillText {
+  color: #78cdd7;
+  font-size: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.skillIcon {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#skillIcon1 {
+  background-image: url(images/js.png);
+}
+
+#skillIcon2 {
+  background-image: url(images/html.png);
+}
+
+#skillIcon3 {
+  background-image: url(images/css.png);
+}
+
+#skillIcon4 {
+  background-image: url(images/react.png);
+}
+
+#skillIcon5 {
+  background-image: url(images/bootstrap.png);
+}
+#skillIcon6 {
+  background-image: url(images/sql.png);
+}
+
+#skillIcon7 {
+  background-image: url(images/git.png);
+}
+
+/*Contact*/
+a {
+  text-decoration: none;
+}
+
+.contactLink {
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#link1 {
+  background-image: url(images/mail.png);
+}
+
+#link2 {
+  background-image: url(images/linkedin.png);
+}
+
+#link3 {
+  background-image: url(images/githubBlue.png);
+}
+
 /*MEDIA*/
 @media screen and (max-width: 576px) {
-  .backBtn {
-    position: fixed;
+  .framesText {
+    font-size: 28px;
   }
 }
